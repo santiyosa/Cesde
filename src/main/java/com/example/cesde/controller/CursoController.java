@@ -33,18 +33,5 @@ public class CursoController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<CursoDTO>(cursoDTO, HttpStatus.OK);
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<CursoDTO> getUser(@PathVariable Long id) {
-        CursoDTO cursoDTO = cursoService.geCursoDTOById(id);
-
-        if (cursoDTO == null) {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<CursoDTO>(cursoDTO, HttpStatus.OK);
-    }
-
-
-    
+    }    
 }

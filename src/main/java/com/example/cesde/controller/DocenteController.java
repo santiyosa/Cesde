@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.cesde.DTO.CursoDTO;
+import com.example.cesde.DTO.DocenteDTO;
 import com.example.cesde.service.DocenteService;
 
 @RestController
@@ -18,7 +18,7 @@ public class DocenteController {
     private DocenteService docenteService;
 
     @GetMapping("")
-    public List<CursoDTO> getDocente() {
+    public List<DocenteDTO> getDocente() {
         return docenteService.getDocenteDTO();
     }
 }
