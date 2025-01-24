@@ -37,6 +37,10 @@ Para listar todos los cursos:
 Para listas los cursos por id
 http://localhost:8080/api/docentes
 
+En la ruta 
+src/main/resources
+Se encuentra el script para creación de la base de datos.
+
 
 
 
